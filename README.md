@@ -1,56 +1,102 @@
-# Welcome to your Expo app 👋
+# Task Management & To-Do App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
 
-## Get started
+A Task Management Mobile Application built using
+React Native, Expo, TypeScript and Expo SQLite.
 
-1. Install dependencies
+The application allows users to create, manage,
+update, search and delete tasks.
 
-   ```bash
-   npm install
-   ```
+All task information is stored locally using SQLite.
+The application works without an internet connection.
 
-2. Start the app
+## Features
 
-   ```bash
-   npx expo start
-   ```
+- Dashboard with task statistics
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
+- Task title and description
+- High, Medium and Low priority
+- Due date selection
+- Mark tasks as completed or pending
+- Search tasks
+- Filter All, Pending and Completed tasks
+- Sort tasks by priority and due date
+- Local SQLite database
+- Offline functionality
+- Persistent data storage
 
-In the output, you'll find options to open the app in a
+## Technologies
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- React Native
+- Expo
+- TypeScript
+- Expo SQLite
+- React Navigation
+- Context API
+- React Hooks
+- FlatList
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
+src/
+  components/
+  screens/
+  database/
+  context/
+  navigation/
+  types/
+  constants/
 
-When you're ready, run:
+App.tsx
 
-```bash
-npm run reset-project
-```
+## Installation
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+Clone the repository:
 
-### Other setup steps
+git clone YOUR_GITHUB_REPOSITORY_URL
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+Navigate into the project:
 
-## Learn more
+cd Task14TodoApp
 
-To learn more about developing your project with Expo, look at the following resources:
+Install dependencies:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+npm install
 
-## Join the community
+Start the Expo development server:
 
-Join our community of developers creating universal apps.
+npx expo start
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Running the Application
+
+- Scan the QR code using Expo Go on your phone.
+- Or run on an Android emulator.
+
+## Database
+
+The application uses Expo SQLite.
+
+Database name:
+
+taskmanager.db
+
+Table name:
+
+tasks
+
+Task information is stored locally on the device
+and remains available after restarting the application.
+
+## Offline Support
+
+No external API is required.
+
+All task CRUD operations are performed
+using the local SQLite database.
+
+## Author
+
+Your Name
